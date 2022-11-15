@@ -26,3 +26,11 @@ email = "ulmunim@gmail.com"
 twitter_username = "lorem_ipsum"
 github_username =  "attamunim"
 gplus_username =  "lorem_ipsum"
+
+[extra.favicon]
+favicon_16x16 = "/icons/favicon.png"
+favicon_32x32 = "/icons/favicon.png"
+apple_touch_icon = "/icons/apple-touch-icon.png"
+safari_pinned_tab = "/icons/safari-pinned-tab.svg"
+webmanifest = "/icons/site.webmanifest"
+
