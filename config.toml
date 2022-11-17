@@ -32,3 +32,7 @@ gplus_username =  "lorem_ipsum"
 favicon_16x16 = "/icons/favicon.png"
 favicon_32x32 = "/icons/favicon.png"
 
+analytics = "google_analytics"
+
+[extra.google_analytics]
+id = "G-79WFJ9R15L"
