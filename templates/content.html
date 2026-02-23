@@ -1,65 +1,143 @@
 {% macro about() %}
- <div class="user-details">
-  <h1> My Expertise </h1>
-  <p> {{ config.extra.user_description }} </p>
+<div class="user-details">
+  <h1> About Me </h1>
+  <p>
+    I am a passionate Software Developer with strong expertise in full-stack web development,
+    Java application development, database systems, and distributed computing.
+    I have hands-on experience building scalable web platforms, desktop applications,
+    and AI-based academic projects. I focus on writing clean, maintainable code
+    and designing user-friendly, responsive systems.
+  </p>
 </div>
-  <div class="user">
-    <div class="tech">
-      <h2>Design</h2>
-      <i class="devicon-html5-plain-wordmark"></i>
-      <i class="devicon-bootstrap-plain-wordmark colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Code</h2>
-      <i class="devicon-javascript-plain colored"></i>
-      <i class="devicon-react-original-wordmark colored"></i>
-      <i class="devicon-nodejs-plain-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
-    <div class="tech">
-      <h2>Tools</h2>
-      <i class="devicon-git-plain"></i>
-      <i class="devicon-gulp-plain colored"></i>
-      <i class="devicon-atom-original-wordmark"></i>
-      <p>Mumblecore hexagon kombucha, pitchfork four loko raclette intelligentsia master cleanse.
-        Vinyl XOXO lumbersexual</p>
-    </div>
+
+<div class="user">
+  <div class="tech">
+    <h2>Frontend Development</h2>
+    <i class="devicon-html5-plain-wordmark"></i>
+    <i class="devicon-css3-plain-wordmark colored"></i>
+    <i class="devicon-bootstrap-plain-wordmark colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <p>
+      Skilled in building responsive, modern interfaces using HTML5, CSS3,
+      Bootstrap, and JavaScript. Experienced in creating interactive dashboards,
+      form validations, authentication pages, and dynamic UI components.
+    </p>
+  </div>
+
+  <div class="tech">
+    <h2>Backend & Programming</h2>
+    <i class="devicon-php-plain colored"></i>
+    <i class="devicon-java-plain-wordmark colored"></i>
+    <i class="devicon-nodejs-plain-wordmark"></i>
+    <i class="devicon-mysql-plain-wordmark colored"></i>
+    <p>
+      Strong foundation in PHP, Java, and MySQL for building secure
+      database-driven systems. Developed authentication systems, scheduling
+      software, booking systems, distributed MapReduce applications,
+      and role-based platforms.
+    </p>
+  </div>
+
+  <div class="tech">
+    <h2>Tools, AI & Systems</h2>
+    <i class="devicon-git-plain"></i>
+    <i class="devicon-github-original-wordmark colored"></i>
+    <i class="devicon-firebase-plain-wordmark colored"></i>
+    <i class="devicon-linux-plain colored"></i>
+    <p>
+      Experienced with Git version control, GitHub collaboration, Firebase,
+      Linux environments, software testing, distributed systems concepts,
+      artificial intelligence coursework, and database architecture design.
+    </p>
+  </div>
 </div>
 {% endmacro about %}
+
 
 {% macro projects() %}
 <div class="user-details">
   <h1> Featured Projects </h1>
 </div>
+
+<!-- Project 1 -->
 <div class="user-projects">
   <div class="images-right">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/mountains.jpg" }}" />
+    <img alt="job recruitment platform" src="{{ config.base_url ~ "/img/project1.jpg" }}" />
   </div>
   <div class="contents">
-    <h3> Project Title </h3>
+    <h3>Job Recruitment Platform (Full-Stack Web Application)</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li>HTML, CSS, Bootstrap, JavaScript, PHP, MySQL</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>
+      Developed a full-stack job recruitment platform allowing employers to post jobs
+      and candidates to apply online. Implemented secure login & registration,
+      session management, role-based dashboards, and dynamic CRUD operations.
+      Designed responsive UI with Bootstrap and optimized database queries.
+    </p>
+    <a class="project-link" href="#">View Project</a>
   </div>
 </div>
+
+<!-- Project 2 -->
 <div class="user-projects">
   <div class="images-left">
-    <img alt="mountains" src="{{ config.base_url ~ "/img/skate.jpg" }}" />
+    <img alt="hall booking management system" src="{{ config.base_url ~ "/img/project2.jpg" }}" />
   </div>
   <div class="contents-right">
-    <h3> Project Title </h3>
+    <h3>Hall Booking Management System (Desktop Application)</h3>
     <ul>
-      <li> Featured Skills</li>
+      <li>Java, JavaFX, File Handling</li>
     </ul>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <a class="project-link" href="#">Check it out</a>
+    <p>
+      Designed and implemented a multi-role desktop application supporting
+      Scheduler, Customer, Administrator, and Manager roles.
+      Integrated booking validation, record management, and file-based
+      data persistence without database dependency.
+      Focused on modular design and clean architecture.
+    </p>
+    <a class="project-link" href="#">View Project</a>
   </div>
 </div>
-{% endmacro projects %}
 
+<!-- Project 3 -->
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="mapreduce distributed system" src="{{ config.base_url ~ "/img/project3.jpg" }}" />
+  </div>
+  <div class="contents">
+    <h3>Distributed WordCount System (MapReduce)</h3>
+    <ul>
+      <li>Java, Distributed Systems, Parallel Programming</li>
+    </ul>
+    <p>
+      Built a MapReduce-based WordCount system implementing Mapper,
+      Shuffle, and Reducer phases to simulate distributed computation.
+      Demonstrated understanding of parallel processing,
+      task distribution, and data aggregation in distributed environments.
+    </p>
+    <a class="project-link" href="#">View Project</a>
+  </div>
+</div>
+
+<!-- Project 4 -->
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="staff scheduling system" src="{{ config.base_url ~ "/img/project4.jpg" }}" />
+  </div>
+  <div class="contents-right">
+    <h3>Smart Staff Scheduling System</h3>
+    <ul>
+      <li>PHP, JavaScript, MySQL, Algorithm Logic</li>
+    </ul>
+    <p>
+      Developed an intelligent scheduling system that assigns staff
+      based on availability using a color-priority system (Red, Yellow, Green).
+      Implemented date-range scheduling, shift constraints,
+      and calendar-based visualization for better workforce management.
+    </p>
+    <a class="project-link" href="#">View Project</a>
+  </div>
+</div>
+
+{% endmacro projects %}
